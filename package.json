@@ -29,6 +29,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.28.1",
     "@next/bundle-analyzer": "^15.4.5",
     "@szum-tech/design-system": "^2.3.1",
     "@t3-oss/env-nextjs": "^0.13.8",
@@ -39,6 +40,7 @@
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.61.1",
     "server-only": "^0.0.1",
+    "svix": "^1.70.0",
     "zod": "^4.0.14"
   },
   "devDependencies": {
