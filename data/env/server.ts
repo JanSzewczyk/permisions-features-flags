@@ -14,7 +14,11 @@ export const env = createEnv({
       .optional()
       .transform((value) => value === "true" || value === "1"),
     VERCEL_URL: z.string().optional(),
-    CLERK_WEBHOOK_SECRET: z.string()
+    CLERK_WEBHOOK_SECRET: z.string(),
+    FEATURE_FLAG_ADVANCED_ANALYTICS: z
+      .enum(["true", "false"])
+      .optional()
+      .transform((value) => value === "true")
   },
   experimental__runtimeEnv: process.env,
   /**
