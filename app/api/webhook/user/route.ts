@@ -1,9 +1,9 @@
 import { Webhook } from "svix";
 
 import { type WebhookEvent } from "@clerk/backend";
+import { clerkClient } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
 import { env } from "~/data/env/server";
-import { clerkClient } from "@clerk/nextjs/server";
 
 export async function POST(request: Request) {
   const headerPayload = await headers();
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       "svix-id": svixId,
       "svix-timestamp": svixTimestamp,
       "svix-signature": svixSignature
-    });
+    }) as WebhookEvent;
   } catch (error) {
     console.error("Error verified webhook", error);
     return new Response("Error occurred", {
