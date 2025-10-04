@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 Next.js Szumplate
+# 🔐 Permissions & Feature Flags
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=github&utm_campaign=next-enterprise)
-[![GitHub stars](https://img.shields.io/github/stars/JanSzewczyk/nextjs-szumplate?style=social)](https://github.com/JanSzewczyk/nextjs-szumplate/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/JanSzewczyk/permisions-features-flags?style=social)](https://github.com/JanSzewczyk/permisions-features-flags/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**An enterprise-ready Next.js template that accelerates your development workflow**
+**A modern Next.js application demonstrating advanced permissions management and feature flag system**
 
 [Features](#-features) • [Getting Started](#-getting-started) • [Documentation](#-table-of-contents) •
 [Deployment](#-deployment)
@@ -17,9 +17,7 @@
 
 ## 👋 Hello there!
 
-This is **Next.js Szumplate**, an open-source template for enterprise projects! It is packed with features that will
-help you create an efficient, maintainable, and enjoyable application. This template will save you a lot of time, so sit
-back, relax, and get ready to conquer the whole world with your new awesome app!
+This is **Permissions & Feature Flags**, a comprehensive Next.js application showcasing enterprise-grade permission management and feature flag systems! This project demonstrates how to build scalable, secure applications with fine-grained access control and dynamic feature rollouts. Perfect for learning modern authorization patterns and feature management strategies in Next.js applications.
 
 ## ✨ Features
 
@@ -30,6 +28,8 @@ back, relax, and get ready to conquer the whole world with your new awesome app!
 - **🛠️ Extremely strict [TypeScript](https://www.typescriptlang.org/)** - With `ts-reset` library for ultimate type
   safety
 - **🎯 [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)** - No more spaghetti imports
+- **🔐 Permission System** - Role-based and attribute-based access control (RBAC/ABAC)
+- **🚩 Feature Flags** - Dynamic feature rollout and A/B testing capabilities
 
 ### 🧪 Testing & Quality
 
@@ -105,8 +105,8 @@ Don't forget to star ⭐ and fork the repository first!
 #### 2. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/<your_username>/nextjs-szumplate.git
-cd nextjs-szumplate
+git clone https://github.com/JanSzewczyk/permisions-features-flags.git
+cd permisions-features-flags
 ```
 
 #### 3. 📦 Install Dependencies
@@ -429,7 +429,7 @@ export async function getData() {
 ## 📁 Project Structure
 
 ```
-nextjs-szumplate/
+permisions-features-flags/
 ├── .github/
 │   └── workflows/        # GitHub Actions workflows (CI/CD)
 ├── .storybook/           # Storybook configuration
@@ -438,6 +438,7 @@ nextjs-szumplate/
 ├── data/                 # Static data and constants
 ├── features/             # Feature-based modules and logic
 ├── lib/                  # Utility functions and helpers
+│   └── auth.ts           # Authentication and permission utilities
 ├── public/               # Static assets (images, fonts, icons)
 ├── stories/              # Storybook stories
 ├── tests/                # Test files
@@ -524,18 +525,18 @@ This template is built with amazing tools and libraries from the open-source com
 
 If you have any questions, suggestions, or issues:
 
-- 🐛 [Open an issue](https://github.com/JanSzewczyk/nextjs-szumplate/issues)
-- ⭐ [Star this repository](https://github.com/JanSzewczyk/nextjs-szumplate)
+- 🐛 [Open an issue](https://github.com/JanSzewczyk/permisions-features-flags/issues)
+- ⭐ [Star this repository](https://github.com/JanSzewczyk/permisions-features-flags)
 - 👨‍💻 Check out my [GitHub profile](https://github.com/JanSzewczyk)
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [Szum-Tech](https://github.com/szum-tech)**
+**Made with ❤️ by [Jan Szewczyk](https://github.com/JanSzewczyk)**
 
-If this template helped you, please consider giving it a ⭐ on GitHub!
+If this project helped you, please consider giving it a ⭐ on GitHub!
 
-[⬆ Back to Top](#-nextjs-szumplate)
+[⬆ Back to Top](#-permissions--feature-flags)
 
 </div>
