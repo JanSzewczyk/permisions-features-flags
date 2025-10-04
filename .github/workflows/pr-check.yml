@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -30,9 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -46,9 +46,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -62,9 +62,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -86,9 +86,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -102,9 +102,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -121,9 +121,9 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Node 🟢
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
@@ -150,7 +150,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout code 📚
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Dependency Review
         uses: actions/dependency-review-action@v4
         with:
